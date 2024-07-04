@@ -30,7 +30,7 @@ export class Output {
     var sound = new Sound();
     sound.sample = (this.RBUF_SIZE + this.playing - this.played) % this.RBUF_SIZE;
     sound.buf = new Float32Array(sound.sample);
-    sound.freq = sound.freq * 2; // Halve the frequency to lower the pitch
+    sound.freq = sound.freq * 4; // Halve the frequency to lower the pitch
     return sound;
   }
 
